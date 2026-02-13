@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Proje Takip Sistemi Yönetim Paneli</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center pe-3" href="#">
+                    <img src="~/Images/kku_logo.jpg" alt="Logo" height="40" class="me-2">
+                    <span class="fw-bold text-white">Proje Takip Sistemi Yönetim Paneli</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">@Html.ActionLink("Anasayfa", "Index", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <!-- <li class="nav-item">@Html.ActionLink("Proje İstekleri","ProjeIstek","Yonetici",null, new { @class = "nav-link" })</li> -->
+                    <li class="nav-item">@Html.ActionLink("Proje Atama", "Ata", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Proje Takip", "Takip", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Raporlar", "Raporlar", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Toplantı Oluştur", "Toplanti", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Toplantıya Katıl", "ToplantiKatil", "Yonetici", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item ms-3">
+                        @Html.ActionLink("Çıkış", "Index", "Logout", null, new { @class = "btn btn-danger" })
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+</body>
+</html>

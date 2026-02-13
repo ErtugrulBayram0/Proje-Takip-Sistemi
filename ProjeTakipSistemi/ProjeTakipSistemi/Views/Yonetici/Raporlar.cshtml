@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Raporlar";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<!-- Öğrenci Seçim Formu -->
+@using (Html.BeginForm("Raporlar", "Yonetici", FormMethod.Get))
+{
+    <div class="form-group mb-3">
+        <div class="mt-5 mb-3 text-center"><h2>Öğrenci Raporları</h2></div>
+        <label class="mb-1">Öğrenci Seçiniz :</label>
+        @Html.DropDownList("ogrenciID", (SelectList)ViewBag.OgrenciListesi, "Tüm Öğrenciler", new { @class = "form-control", onchange = "this.form.submit();" })
+    </div>
+}
+
+<!-- Rapor Tablosu -->
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Öğrenci</th>
+            <th>Proje</th>
+            <th>Dosya</th>
+            <th>Yüklenme Tarihi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.Raporlar != null)
+        {
+            foreach (var rapor in ViewBag.Raporlar)
+            {
+                <tr>
+                    <td>@rapor.OgrenciAdSoyad</td>
+                    <td>@rapor.ProjeAd</td>
+                    <td><a href="@rapor.DosyaYolu" target="_blank">@rapor.DosyaAdi</a></td>
+                    <td>@rapor.YuklenenTarih.ToString("dd.MM.yyyy HH:mm")</td>
+                </tr>
+            }
+        }
+        else if (TempData["Mesaj"] != null)
+        {
+            <tr>
+                <td colspan="4">
+                    <div class="alert alert-danger text-center">
+                        @TempData["Mesaj"]
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="mb-3">
+        <h3>@ViewBag.ogrenci.ogrAd @ViewBag.ogrenci.ogrSoyad @ViewBag.isler.projeAdi </h3>
+    </div>
+
+     
+
+            <div class="card">
+                <div class="card-header bg-black text-center text-white">
+                    @ViewBag.projeAdi
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("Listele", "Yonetici", FormMethod.Post))
+                    {
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">@ViewBag.isler.aciklama</li>
+                            <li class="list-group-item">İletilen Tarih: @ViewBag.isler.verilenTarih.ToString("dd MMMM yyyy hh:mm")</li>
+                            <li class="list-group-item">Yapılan Tarih :@(ViewBag.isler.gorulenTarih != null ? ViewBag.isler.gorulenTarih.ToString("dd MMMM yyyy hh:mm") : "Henüz Girilmedi.")</li>
+                            <li class="list-group-item">Durum : @ViewBag.durum</li>
+                            @*<li class="list-group-item">Yorum : @i.projeYorum</li>*@
+                        </ul>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Geri Dön</button>
+                        </div>
+                     }
+
+                </div>
+            </div>
+        
+</div>
+

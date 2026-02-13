@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Takip";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Takip", "Yonetici", FormMethod.Post))
+            {
+                <div class="mb-3">
+                    <label for="projeBaslik" class="form-label">Proje Seçiniz</label>
+                    <select class="form-select" name="proje" id="projeBaslik" onchange="this.form.submit()">
+                        <option value="">Proje Seçiniz</option>
+                        @foreach (var proje in ViewBag.projeListesi)
+                        {
+                            <option value="@proje.ProjeID" @(Request["proje"] == proje.ProjeID.ToString() ? "selected" : "")>
+                                @proje.ProjeAd
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="selectOgr" class="form-label">Öğrenci Seçiniz</label>
+                    <select class="form-select" name="selectOgr" id="selectOgr">
+                        <option value="">Öğrenci Seçiniz</option>
+                        @if (ViewBag.ogrenciler != null)
+                        {
+                            foreach (var ogr in ViewBag.ogrenciler)
+                            {
+                                <option value="@ogr.ogrID">@ogr.ogrAd @ogr.ogrSoyad</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Gönder</button>
+
+            }
+
+        </div>
+    </div>
+</div>
+@if (ViewBag.Mesaj != null)
+{
+    <div class="alert alert-warning">@ViewBag.Mesaj</div>
+}

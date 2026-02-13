@@ -1,0 +1,102 @@
+﻿/* Genel yazı tipi ve arka plan */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+/* Navbar özel tasarım */
+.navbar {
+    background-color: #2c3e50 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #ecf0f1 !important;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: #f39c12 !important;
+    }
+
+/* Sayfa içeriği */
+.container {
+    max-width: 900px;
+}
+
+/* Kart tasarımı */
+.card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card-header {
+    background-color: #34495e !important;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #ecf0f1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: right;
+}
+
+/* Liste elemanları */
+.list-group-item {
+    border: none;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    font-weight: 600;
+}
+
+    .btn-primary:hover {
+        background-color: #3498db;
+        border-color: #3498db;
+    }
+
+.btn-danger {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    font-weight: 600;
+}
+
+    .btn-danger:hover {
+        background-color: #e74c3c;
+        border-color: #e74c3c;
+    }
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}

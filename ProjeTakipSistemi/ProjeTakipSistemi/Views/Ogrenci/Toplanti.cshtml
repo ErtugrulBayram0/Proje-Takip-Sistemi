@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Toplanti";
+    Layout = "~/Views/Shared/_LayoutOgrenci.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            Toplantıya Katıl
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Toplanti", "Ogrenci", FormMethod.Post))
+            {
+                if (TempData["mesaj"] == null)
+                {
+                    <div class="mb-3">
+                        <label for="toplantiSelect" class="form-label">Toplantı Seçiniz</label>
+                        <select class="form-select" name="toplantiSelect" id="toplantiSelect" required>
+                            <option value="" disabled selected>Toplantı Seçiniz</option>
+                            @foreach (var toplanti in ViewBag.toplantilar)
+                            {
+                                <option value="@toplanti.id">@toplanti.tarih</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-primary">Katıl</button>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        @TempData["mesaj"]
+                    </div>
+                }
+
+            }
+        </div>
+    </div>
+</div>
+
+

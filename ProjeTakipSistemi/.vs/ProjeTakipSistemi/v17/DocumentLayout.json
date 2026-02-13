@@ -1,0 +1,474 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\ogrenci\\rapor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\ogrenci\\rapor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\controllers\\yoneticicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\controllers\\yoneticicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\yonetici\\toplanti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\yonetici\\toplanti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\shared\\_layoutyonetici.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\shared\\_layoutyonetici.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\yonetici\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\yonetici\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|c:\\users\\ertugrul\\desktop\\pts\\projetakipsistemi\\projetakipsistemi\\views\\shared\\_layoutogrenci.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\shared\\_layoutogrenci.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\controllers\\ogrencicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\controllers\\ogrencicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\services\\zoomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\services\\zoomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\ogrenci\\projegonder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\ogrenci\\projegonder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\viewmodels\\projelerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\viewmodels\\projelerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\yonetici\\listele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\yonetici\\listele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\shared\\_layoutsistemyoneticisi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\shared\\_layoutsistemyoneticisi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\ogrenci\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\ogrenci\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\yonetici\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\yonetici\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\filters\\authfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\filters\\authfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\controllers\\sistemyoneticisicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\controllers\\sistemyoneticisicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\ogrenci\\toplanti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\ogrenci\\toplanti.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\sistemyoneticisi\\bolum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\sistemyoneticisi\\bolum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\viewmodels\\toplantilarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\viewmodels\\toplantilarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\sistemyoneticisi\\olustur.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\sistemyoneticisi\\olustur.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\sistemyoneticisi\\guncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\sistemyoneticisi\\guncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\sistemyoneticisi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\sistemyoneticisi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\yonetici\\raporlar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\yonetici\\raporlar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\viewmodels\\projedurumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\viewmodels\\projedurumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\views\\ogrenci\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\views\\ogrenci\\takip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\projetakipsistemi\\models\\projeislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB9BDE-70E6-430F-BF33-74C671973461}|ProjeTakipSistemi\\ProjeTakipSistemi.csproj|solutionrelative:projetakipsistemi\\models\\projeislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rapor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Rapor.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Ogrenci\\Rapor.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Rapor.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Ogrenci\\Rapor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T15:27:27.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutYonetici.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Shared\\_LayoutYonetici.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwB4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T21:54:57.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YoneticiController.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\YoneticiController.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Controllers\\YoneticiController.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\YoneticiController.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Controllers\\YoneticiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T17:53:12.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Toplanti.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Toplanti.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Yonetici\\Toplanti.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Toplanti.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Yonetici\\Toplanti.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T18:30:53.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T01:40:28.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_LayoutOgrenci.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutOgrenci.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Shared\\_LayoutOgrenci.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutOgrenci.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Shared\\_LayoutOgrenci.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T21:45:36.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Yonetici\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Index.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Yonetici\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T18:41:22.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OgrenciController.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\OgrenciController.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Controllers\\OgrenciController.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\OgrenciController.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Controllers\\OgrenciController.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAIwAwBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:25:21.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_LayoutSistemYoneticisi.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutSistemYoneticisi.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Shared\\_LayoutSistemYoneticisi.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Shared\\_LayoutSistemYoneticisi.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Shared\\_LayoutSistemYoneticisi.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T22:58:56.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwCkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T12:49:27.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjeGonder.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\ProjeGonder.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Ogrenci\\ProjeGonder.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\ProjeGonder.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Ogrenci\\ProjeGonder.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T23:27:17.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ZoomService.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Services\\ZoomService.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Services\\ZoomService.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Services\\ZoomService.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Services\\ZoomService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T21:27:53.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjelerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ProjelerViewModel.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\ViewModels\\ProjelerViewModel.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ProjelerViewModel.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\ViewModels\\ProjelerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T17:50:28.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Listele.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Listele.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Yonetici\\Listele.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Listele.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Yonetici\\Listele.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T16:25:26.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Guncelle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Guncelle.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Guncelle.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Guncelle.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Guncelle.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T14:20:10.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Olustur.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Olustur.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Olustur.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Olustur.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Olustur.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T14:05:44.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Takip.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Takip.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Yonetici\\Takip.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Takip.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Yonetici\\Takip.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T20:35:25.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Ogrenci\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Index.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Ogrenci\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T13:24:30.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Bolum.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Bolum.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Bolum.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Bolum.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Bolum.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T00:25:23.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Filters\\AuthFilter.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Filters\\AuthFilter.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Filters\\AuthFilter.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Filters\\AuthFilter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T17:05:25.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Toplanti.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Toplanti.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Ogrenci\\Toplanti.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Toplanti.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Ogrenci\\Toplanti.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T15:49:17.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SistemYoneticisiController.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\SistemYoneticisiController.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Controllers\\SistemYoneticisiController.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Controllers\\SistemYoneticisiController.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Controllers\\SistemYoneticisiController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T23:03:42.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ToplantilarViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ToplantilarViewModel.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\ViewModels\\ToplantilarViewModel.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ToplantilarViewModel.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\ViewModels\\ToplantilarViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T13:27:29.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\SistemYoneticisi\\Index.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\SistemYoneticisi\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T00:19:30.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Raporlar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Raporlar.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Yonetici\\Raporlar.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Yonetici\\Raporlar.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Yonetici\\Raporlar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T20:26:28.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProjeDurumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ProjeDurumViewModel.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\ViewModels\\ProjeDurumViewModel.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\ViewModels\\ProjeDurumViewModel.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\ViewModels\\ProjeDurumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T00:49:51.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Takip.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Takip.cshtml",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Views\\Ogrenci\\Takip.cshtml",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Views\\Ogrenci\\Takip.cshtml",
+              "RelativeToolTip": "ProjeTakipSistemi\\Views\\Ogrenci\\Takip.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T00:22:19.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProjeIslem.cs",
+              "DocumentMoniker": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Models\\ProjeIslem.cs",
+              "RelativeDocumentMoniker": "ProjeTakipSistemi\\Models\\ProjeIslem.cs",
+              "ToolTip": "C:\\Users\\Ertugrul\\Desktop\\PTS\\ProjeTakipSistemi\\ProjeTakipSistemi\\Models\\ProjeIslem.cs",
+              "RelativeToolTip": "ProjeTakipSistemi\\Models\\ProjeIslem.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T00:29:25.404Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

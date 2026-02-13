@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Takip";
+    Layout = "~/Views/Shared/_LayoutOgrenci.cshtml";
+
+    @model ProjeTakipSistemi.ViewModels.ProjeDurumViewModel
+}
+
+<div class="container mt-5">
+    @foreach(var item in Model.projeDurumlar)
+     {
+        <div class="card-header bg-black text-center text-white"> @item.projeBaslik</div>
+
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@item.projeAciklama</li>
+                <li class="list-group-item">İletilen Tarih: @item.iletilenTarih</li>
+                <li class="list-group-item">Görülen Tarih :@item.gorulenTarih</li>
+                <li class="list-group-item">Durum : @item.durumAd</li>
+            </ul>
+        </div>
+        <br />
+
+
+     }
+</div>

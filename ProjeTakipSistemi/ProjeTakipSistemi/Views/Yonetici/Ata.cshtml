@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Ata";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Ata", "Yonetici", FormMethod.Post))
+            {
+                <div class="mb-3">
+                    <label for="projeBaslik" class="form-label">Proje Türünü Giriniz</label>
+                     <select class="form-select" name="projeBaslik" id="projeBaslik">
+                         @foreach(var proje in ViewBag.projeListesi)
+                            {   
+                              <option value="@proje.ProjeID" >@proje.ProjeAd</option>
+
+                            }
+                     </select>
+                </div>
+                <div class="mb-3">
+                    <label for="projeAciklama" class="form-label">Açıklama Giriniz</label>
+                    <input type="text" class="form-control" id="projeAciklama" name="projeAciklama">
+                </div>
+
+                <div class="mb-3">
+                    <label for="selectOgr" class="form-label">Öğrenci Seçiniz</label>
+                    <select class="form-select" name="selectOgr" id="SelectOgr">
+                        @foreach (var ogrenci in ViewBag.ogrenciler)
+                        {
+                            <option value="@ogrenci.ogrID">@ogrenci.ogrAd @ogrenci.ogrSoyad</option>
+                        }
+
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-outline-primary" type="submit">Proje Ata</button>
+
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+
+

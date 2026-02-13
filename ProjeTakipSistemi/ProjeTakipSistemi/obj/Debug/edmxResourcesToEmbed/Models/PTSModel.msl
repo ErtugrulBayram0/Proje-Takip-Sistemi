@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ptsModelStoreContainer" CdmEntityContainer="ptsEntities">
+    <EntitySetMapping Name="Bolumler">
+      <EntityTypeMapping TypeName="ptsModel.Bolumler">
+        <MappingFragment StoreEntitySet="Bolumler">
+          <ScalarProperty Name="fakulteID" ColumnName="fakulteID" />
+          <ScalarProperty Name="BolumID" ColumnName="BolumID" />
+          <ScalarProperty Name="BolumAd" ColumnName="BolumAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Donemler">
+      <EntityTypeMapping TypeName="ptsModel.Donemler">
+        <MappingFragment StoreEntitySet="Donemler">
+          <ScalarProperty Name="DonemID" ColumnName="DonemID" />
+          <ScalarProperty Name="DonemAdi" ColumnName="DonemAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonemlikAlinanProje">
+      <EntityTypeMapping TypeName="ptsModel.DonemlikAlinanProje">
+        <MappingFragment StoreEntitySet="DonemlikAlinanProje">
+          <ScalarProperty Name="AlinanProjeID" ColumnName="AlinanProjeID" />
+          <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
+          <ScalarProperty Name="ogrElmID" ColumnName="ogrElmID" />
+          <ScalarProperty Name="donemID" ColumnName="donemID" />
+          <ScalarProperty Name="ogrID" ColumnName="ogrID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Durum">
+      <EntityTypeMapping TypeName="ptsModel.Durum">
+        <MappingFragment StoreEntitySet="Durum">
+          <ScalarProperty Name="durumID" ColumnName="durumID" />
+          <ScalarProperty Name="durumAd" ColumnName="durumAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenciler">
+      <EntityTypeMapping TypeName="ptsModel.Ogrenciler">
+        <MappingFragment StoreEntitySet="Ogrenciler">
+          <ScalarProperty Name="yetkiTuru" ColumnName="yetkiTuru" />
+          <ScalarProperty Name="ogrID" ColumnName="ogrID" />
+          <ScalarProperty Name="ogrAd" ColumnName="ogrAd" />
+          <ScalarProperty Name="ogrSoyad" ColumnName="ogrSoyad" />
+          <ScalarProperty Name="ogrMail" ColumnName="ogrMail" />
+          <ScalarProperty Name="ogrSifre" ColumnName="ogrSifre" />
+          <ScalarProperty Name="ogrBolum" ColumnName="ogrBolum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgretimElemanlari">
+      <EntityTypeMapping TypeName="ptsModel.OgretimElemanlari">
+        <MappingFragment StoreEntitySet="OgretimElemanlari">
+          <ScalarProperty Name="yetkiTuru" ColumnName="yetkiTuru" />
+          <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+          <ScalarProperty Name="ogrElmAd" ColumnName="ogrElmAd" />
+          <ScalarProperty Name="ogrElmSoyad" ColumnName="ogrElmSoyad" />
+          <ScalarProperty Name="ogrElmBolum" ColumnName="ogrElmBolum" />
+          <ScalarProperty Name="ogrElmMail" ColumnName="ogrElmMail" />
+          <ScalarProperty Name="ogrElmSifre" ColumnName="ogrElmSifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projeler">
+      <EntityTypeMapping TypeName="ptsModel.Projeler">
+        <MappingFragment StoreEntitySet="Projeler">
+          <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
+          <ScalarProperty Name="ProjeAd" ColumnName="ProjeAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ptsModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="ptsModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="adminYetki" ColumnName="adminYetki" />
+          <ScalarProperty Name="adminSifre" ColumnName="adminSifre" />
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+          <ScalarProperty Name="adminAdi" ColumnName="adminAdi" />
+          <ScalarProperty Name="adminSoyadi" ColumnName="adminSoyadi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YetkiTur">
+      <EntityTypeMapping TypeName="ptsModel.YetkiTur">
+        <MappingFragment StoreEntitySet="YetkiTur">
+          <ScalarProperty Name="yetkiAdi" ColumnName="yetkiAdi" />
+          <ScalarProperty Name="yetkiTurID" ColumnName="yetkiTurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="ptsModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="ptsModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="ptsModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="ptsModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ptsModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="ptsModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ptsModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="ptsModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="ptsModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="ProjeIslems">
+      <EntityTypeMapping TypeName="ptsModel.ProjeIslem">
+        <MappingFragment StoreEntitySet="ProjeIslem">
+          <ScalarProperty Name="projeOkuma" ColumnName="projeOkuma" />
+          <ScalarProperty Name="projeYorum" ColumnName="projeYorum" />
+          <ScalarProperty Name="projeAdi" ColumnName="projeAdi" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="ogrID" ColumnName="ogrID" />
+          <ScalarProperty Name="durumID" ColumnName="durumID" />
+          <ScalarProperty Name="gorulenTarih" ColumnName="gorulenTarih" />
+          <ScalarProperty Name="verilenTarih" ColumnName="verilenTarih" />
+          <ScalarProperty Name="alinanProjeID" ColumnName="alinanProjeID" />
+          <ScalarProperty Name="işlemID" ColumnName="işlemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciRaporlaris">
+      <EntityTypeMapping TypeName="ptsModel.OgrenciRaporlari">
+        <MappingFragment StoreEntitySet="OgrenciRaporlari">
+          <ScalarProperty Name="ogrElmID" ColumnName="ogrElmID" />
+          <ScalarProperty Name="YuklenmeTarihi" ColumnName="YuklenmeTarihi" />
+          <ScalarProperty Name="DosyaYolu" ColumnName="DosyaYolu" />
+          <ScalarProperty Name="DosyaAdi" ColumnName="DosyaAdi" />
+          <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
+          <ScalarProperty Name="OgrID" ColumnName="OgrID" />
+          <ScalarProperty Name="RaporID" ColumnName="RaporID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Toplanti">
+      <EntityTypeMapping TypeName="ptsModel.Toplanti">
+        <MappingFragment StoreEntitySet="Toplanti">
+          <ScalarProperty Name="tümOgrenciler" ColumnName="tümOgrenciler" />
+          <ScalarProperty Name="ogrID" ColumnName="ogrID" />
+          <ScalarProperty Name="toplantiLinki" ColumnName="toplantiLinki" />
+          <ScalarProperty Name="toplantiAciklama" ColumnName="toplantiAciklama" />
+          <ScalarProperty Name="toplantiTarihi" ColumnName="toplantiTarihi" />
+          <ScalarProperty Name="ogrElmID" ColumnName="ogrElmID" />
+          <ScalarProperty Name="ToplantiID" ColumnName="ToplantiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fakulteler">
+      <EntityTypeMapping TypeName="ptsModel.Fakulteler">
+        <MappingFragment StoreEntitySet="Fakulteler">
+          <ScalarProperty Name="fakulteAd" ColumnName="fakulteAd" />
+          <ScalarProperty Name="fakulteId" ColumnName="fakulteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciProjeGonderim">
+      <EntityTypeMapping TypeName="ptsModel.OgrenciProjeGonderim">
+        <MappingFragment StoreEntitySet="OgrenciProjeGonderim">
+          <ScalarProperty Name="yuklenmeTarihi" ColumnName="yuklenmeTarihi" />
+          <ScalarProperty Name="DosyaAdi" ColumnName="DosyaAdi" />
+          <ScalarProperty Name="DosyaYolu" ColumnName="DosyaYolu" />
+          <ScalarProperty Name="projeAdi" ColumnName="projeAdi" />
+          <ScalarProperty Name="ogrElmID" ColumnName="ogrElmID" />
+          <ScalarProperty Name="ogrID" ColumnName="ogrID" />
+          <ScalarProperty Name="projeID" ColumnName="projeID" />
+          <ScalarProperty Name="gonderilenProjeId" ColumnName="gonderilenProjeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

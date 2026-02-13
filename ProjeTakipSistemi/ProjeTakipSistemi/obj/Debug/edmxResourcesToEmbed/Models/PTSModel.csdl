@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ptsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bolumler">
+    <Key>
+      <PropertyRef Name="BolumID" />
+    </Key>
+    <Property Name="BolumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BolumAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ogrenciler" Relationship="Self.FK_Ogrenciler_Bolumler" FromRole="Bolumler" ToRole="Ogrenciler" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="Self.FK_OgretimElemanlari_Bolumler" FromRole="Bolumler" ToRole="OgretimElemanlari" />
+    <Property Name="fakulteID" Type="Int32" />
+    <NavigationProperty Name="Fakulteler" Relationship="ptsModel.FK_Bolumler_Fakulteler" FromRole="Bolumler" ToRole="Fakulteler" />
+  </EntityType>
+  <EntityType Name="Donemler">
+    <Key>
+      <PropertyRef Name="DonemID" />
+    </Key>
+    <Property Name="DonemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DonemAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonemlikAlinanProje" Relationship="Self.FK_DonemlikAlinanProje_Donemler" FromRole="Donemler" ToRole="DonemlikAlinanProje" />
+  </EntityType>
+  <EntityType Name="DonemlikAlinanProje">
+    <Key>
+      <PropertyRef Name="AlinanProjeID" />
+    </Key>
+    <Property Name="AlinanProjeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjeID" Type="Int32" />
+    <Property Name="ogrElmID" Type="Int32" />
+    <Property Name="donemID" Type="Int32" />
+    <Property Name="ogrID" Type="Int32" />
+    <NavigationProperty Name="Donemler" Relationship="Self.FK_DonemlikAlinanProje_Donemler" FromRole="DonemlikAlinanProje" ToRole="Donemler" />
+    <NavigationProperty Name="Ogrenciler" Relationship="Self.FK_DonemlikAlinanProje_Ogrenciler" FromRole="DonemlikAlinanProje" ToRole="Ogrenciler" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="Self.FK_DonemlikAlinanProje_OgretimElemanlari" FromRole="DonemlikAlinanProje" ToRole="OgretimElemanlari" />
+    <NavigationProperty Name="Projeler" Relationship="Self.FK_DonemlikAlinanProje_Projeler" FromRole="DonemlikAlinanProje" ToRole="Projeler" />
+    <NavigationProperty Name="ProjeIslems" Relationship="ptsModel.FK_ProjeIslem_DonemlikAlinanProje" FromRole="DonemlikAlinanProje" ToRole="ProjeIslem" />
+  </EntityType>
+  <EntityType Name="Durum">
+    <Key>
+      <PropertyRef Name="durumID" />
+    </Key>
+    <Property Name="durumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="durumAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProjeIslems" Relationship="ptsModel.FK_ProjeIslem_Durum" FromRole="Durum" ToRole="ProjeIslem" />
+  </EntityType>
+  <EntityType Name="Ogrenciler">
+    <Key>
+      <PropertyRef Name="ogrID" />
+    </Key>
+    <Property Name="ogrID" Type="Int32" Nullable="false" />
+    <Property Name="ogrAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrBolum" Type="Int32" />
+    <NavigationProperty Name="Bolumler" Relationship="Self.FK_Ogrenciler_Bolumler" FromRole="Ogrenciler" ToRole="Bolumler" />
+    <NavigationProperty Name="DonemlikAlinanProje" Relationship="Self.FK_DonemlikAlinanProje_Ogrenciler" FromRole="Ogrenciler" ToRole="DonemlikAlinanProje" />
+    <Property Name="yetkiTuru" Type="Int32" />
+    <NavigationProperty Name="YetkiTur" Relationship="ptsModel.FK_Ogrenciler_YetkiTur" FromRole="Ogrenciler" ToRole="YetkiTur" />
+    <NavigationProperty Name="OgrenciRaporlaris" Relationship="ptsModel.FK_OgrenciRaporlari_Ogrenciler" FromRole="Ogrenciler" ToRole="OgrenciRaporlari" />
+    <NavigationProperty Name="Toplanti" Relationship="ptsModel.FK_Toplanti_Ogrenciler" FromRole="Ogrenciler" ToRole="Toplanti" />
+    <NavigationProperty Name="OgrenciProjeGonderim" Relationship="ptsModel.FK_OgrenciProjeGonderim_Ogrenciler" FromRole="Ogrenciler" ToRole="OgrenciProjeGonderim" />
+  </EntityType>
+  <EntityType Name="OgretimElemanlari">
+    <Key>
+      <PropertyRef Name="SicilNo" />
+    </Key>
+    <Property Name="SicilNo" Type="Int32" Nullable="false" />
+    <Property Name="ogrElmAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrElmSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrElmBolum" Type="Int32" />
+    <Property Name="ogrElmMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ogrElmSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bolumler" Relationship="Self.FK_OgretimElemanlari_Bolumler" FromRole="OgretimElemanlari" ToRole="Bolumler" />
+    <NavigationProperty Name="DonemlikAlinanProje" Relationship="Self.FK_DonemlikAlinanProje_OgretimElemanlari" FromRole="OgretimElemanlari" ToRole="DonemlikAlinanProje" />
+    <Property Name="yetkiTuru" Type="Int32" />
+    <NavigationProperty Name="YetkiTur" Relationship="ptsModel.FK_OgretimElemanlari_YetkiTur1" FromRole="OgretimElemanlari" ToRole="YetkiTur" />
+    <NavigationProperty Name="OgrenciRaporlaris" Relationship="ptsModel.FK_OgrenciRaporlari_OgretimElemanlari" FromRole="OgretimElemanlari" ToRole="OgrenciRaporlari" />
+    <NavigationProperty Name="Toplanti" Relationship="ptsModel.FK_Toplanti_OgretimElemanlari" FromRole="OgretimElemanlari" ToRole="Toplanti" />
+    <NavigationProperty Name="OgrenciProjeGonderim" Relationship="ptsModel.FK_OgrenciProjeGonderim_OgretimElemanlari" FromRole="OgretimElemanlari" ToRole="OgrenciProjeGonderim" />
+  </EntityType>
+  <EntityType Name="Projeler">
+    <Key>
+      <PropertyRef Name="ProjeID" />
+    </Key>
+    <Property Name="ProjeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjeAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonemlikAlinanProje" Relationship="Self.FK_DonemlikAlinanProje_Projeler" FromRole="Projeler" ToRole="DonemlikAlinanProje" />
+    <NavigationProperty Name="OgrenciRaporlaris" Relationship="ptsModel.FK_OgrenciRaporlari_Projeler" FromRole="Projeler" ToRole="OgrenciRaporlari" />
+    <NavigationProperty Name="OgrenciProjeGonderim" Relationship="ptsModel.FK_OgrenciProjeGonderim_Projeler" FromRole="Projeler" ToRole="OgrenciProjeGonderim" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="adminID" />
+    </Key>
+    <Property Name="adminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adminAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adminSoyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adminSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adminYetki" Type="Int32" />
+    <NavigationProperty Name="YetkiTur" Relationship="ptsModel.FK_Admin_YetkiTur" FromRole="Admin" ToRole="YetkiTur" />
+  </EntityType>
+  <Association Name="FK_Ogrenciler_Bolumler">
+    <End Role="Bolumler" Type="Self.Bolumler" Multiplicity="0..1" />
+    <End Role="Ogrenciler" Type="Self.Ogrenciler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bolumler">
+        <PropertyRef Name="BolumID" />
+      </Principal>
+      <Dependent Role="Ogrenciler">
+        <PropertyRef Name="ogrBolum" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgretimElemanlari_Bolumler">
+    <End Role="Bolumler" Type="Self.Bolumler" Multiplicity="0..1" />
+    <End Role="OgretimElemanlari" Type="Self.OgretimElemanlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bolumler">
+        <PropertyRef Name="BolumID" />
+      </Principal>
+      <Dependent Role="OgretimElemanlari">
+        <PropertyRef Name="ogrElmBolum" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DonemlikAlinanProje_Donemler">
+    <End Role="Donemler" Type="Self.Donemler" Multiplicity="0..1" />
+    <End Role="DonemlikAlinanProje" Type="Self.DonemlikAlinanProje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donemler">
+        <PropertyRef Name="DonemID" />
+      </Principal>
+      <Dependent Role="DonemlikAlinanProje">
+        <PropertyRef Name="donemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DonemlikAlinanProje_Ogrenciler">
+    <End Role="Ogrenciler" Type="Self.Ogrenciler" Multiplicity="0..1" />
+    <End Role="DonemlikAlinanProje" Type="Self.DonemlikAlinanProje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="ogrID" />
+      </Principal>
+      <Dependent Role="DonemlikAlinanProje">
+        <PropertyRef Name="ogrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DonemlikAlinanProje_OgretimElemanlari">
+    <End Role="OgretimElemanlari" Type="Self.OgretimElemanlari" Multiplicity="0..1" />
+    <End Role="DonemlikAlinanProje" Type="Self.DonemlikAlinanProje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OgretimElemanlari">
+        <PropertyRef Name="SicilNo" />
+      </Principal>
+      <Dependent Role="DonemlikAlinanProje">
+        <PropertyRef Name="ogrElmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DonemlikAlinanProje_Projeler">
+    <End Role="Projeler" Type="Self.Projeler" Multiplicity="0..1" />
+    <End Role="DonemlikAlinanProje" Type="Self.DonemlikAlinanProje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="DonemlikAlinanProje">
+        <PropertyRef Name="ProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ptsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bolumler" EntityType="Self.Bolumler" />
+    <EntitySet Name="Donemler" EntityType="Self.Donemler" />
+    <EntitySet Name="DonemlikAlinanProje" EntityType="Self.DonemlikAlinanProje" />
+    <EntitySet Name="Durum" EntityType="Self.Durum" />
+    <EntitySet Name="Ogrenciler" EntityType="Self.Ogrenciler" />
+    <EntitySet Name="OgretimElemanlari" EntityType="Self.OgretimElemanlari" />
+    <EntitySet Name="Projeler" EntityType="Self.Projeler" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <AssociationSet Name="FK_Ogrenciler_Bolumler" Association="Self.FK_Ogrenciler_Bolumler">
+      <End Role="Bolumler" EntitySet="Bolumler" />
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgretimElemanlari_Bolumler" Association="Self.FK_OgretimElemanlari_Bolumler">
+      <End Role="Bolumler" EntitySet="Bolumler" />
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DonemlikAlinanProje_Donemler" Association="Self.FK_DonemlikAlinanProje_Donemler">
+      <End Role="Donemler" EntitySet="Donemler" />
+      <End Role="DonemlikAlinanProje" EntitySet="DonemlikAlinanProje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DonemlikAlinanProje_Ogrenciler" Association="Self.FK_DonemlikAlinanProje_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="DonemlikAlinanProje" EntitySet="DonemlikAlinanProje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DonemlikAlinanProje_OgretimElemanlari" Association="Self.FK_DonemlikAlinanProje_OgretimElemanlari">
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+      <End Role="DonemlikAlinanProje" EntitySet="DonemlikAlinanProje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DonemlikAlinanProje_Projeler" Association="Self.FK_DonemlikAlinanProje_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="DonemlikAlinanProje" EntitySet="DonemlikAlinanProje" />
+    </AssociationSet>
+    <EntitySet Name="YetkiTur" EntityType="ptsModel.YetkiTur" />
+    <AssociationSet Name="FK_Ogrenciler_YetkiTur" Association="ptsModel.FK_Ogrenciler_YetkiTur">
+      <End Role="YetkiTur" EntitySet="YetkiTur" />
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgretimElemanlari_YetkiTur1" Association="ptsModel.FK_OgretimElemanlari_YetkiTur1">
+      <End Role="YetkiTur" EntitySet="YetkiTur" />
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ptsModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ptsModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="ProjeIslems" EntityType="ptsModel.ProjeIslem" />
+    <AssociationSet Name="FK_ProjeIslem_DonemlikAlinanProje" Association="ptsModel.FK_ProjeIslem_DonemlikAlinanProje">
+      <End Role="DonemlikAlinanProje" EntitySet="DonemlikAlinanProje" />
+      <End Role="ProjeIslem" EntitySet="ProjeIslems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjeIslem_Durum" Association="ptsModel.FK_ProjeIslem_Durum">
+      <End Role="Durum" EntitySet="Durum" />
+      <End Role="ProjeIslem" EntitySet="ProjeIslems" />
+    </AssociationSet>
+    <EntitySet Name="OgrenciRaporlaris" EntityType="ptsModel.OgrenciRaporlari" />
+    <AssociationSet Name="FK_OgrenciRaporlari_Ogrenciler" Association="ptsModel.FK_OgrenciRaporlari_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="OgrenciRaporlari" EntitySet="OgrenciRaporlaris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciRaporlari_Projeler" Association="ptsModel.FK_OgrenciRaporlari_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="OgrenciRaporlari" EntitySet="OgrenciRaporlaris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciRaporlari_OgretimElemanlari" Association="ptsModel.FK_OgrenciRaporlari_OgretimElemanlari">
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+      <End Role="OgrenciRaporlari" EntitySet="OgrenciRaporlaris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Admin_YetkiTur" Association="ptsModel.FK_Admin_YetkiTur">
+      <End Role="YetkiTur" EntitySet="YetkiTur" />
+      <End Role="Admin" EntitySet="Admin" />
+    </AssociationSet>
+    <EntitySet Name="Toplanti" EntityType="ptsModel.Toplanti" />
+    <AssociationSet Name="FK_Toplanti_OgretimElemanlari" Association="ptsModel.FK_Toplanti_OgretimElemanlari">
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+      <End Role="Toplanti" EntitySet="Toplanti" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Toplanti_Ogrenciler" Association="ptsModel.FK_Toplanti_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="Toplanti" EntitySet="Toplanti" />
+    </AssociationSet>
+    <EntitySet Name="Fakulteler" EntityType="ptsModel.Fakulteler" />
+    <EntitySet Name="OgrenciProjeGonderim" EntityType="ptsModel.OgrenciProjeGonderim" />
+    <AssociationSet Name="FK_Bolumler_Fakulteler" Association="ptsModel.FK_Bolumler_Fakulteler">
+      <End Role="Fakulteler" EntitySet="Fakulteler" />
+      <End Role="Bolumler" EntitySet="Bolumler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciProjeGonderim_Ogrenciler" Association="ptsModel.FK_OgrenciProjeGonderim_Ogrenciler">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="OgrenciProjeGonderim" EntitySet="OgrenciProjeGonderim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciProjeGonderim_OgretimElemanlari" Association="ptsModel.FK_OgrenciProjeGonderim_OgretimElemanlari">
+      <End Role="OgretimElemanlari" EntitySet="OgretimElemanlari" />
+      <End Role="OgrenciProjeGonderim" EntitySet="OgrenciProjeGonderim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciProjeGonderim_Projeler" Association="ptsModel.FK_OgrenciProjeGonderim_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="OgrenciProjeGonderim" EntitySet="OgrenciProjeGonderim" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="YetkiTur">
+    <Key>
+      <PropertyRef Name="yetkiTurID" />
+    </Key>
+    <Property Name="yetkiTurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="yetkiAdi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Ogrenciler" Relationship="ptsModel.FK_Ogrenciler_YetkiTur" FromRole="YetkiTur" ToRole="Ogrenciler" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="ptsModel.FK_OgretimElemanlari_YetkiTur1" FromRole="YetkiTur" ToRole="OgretimElemanlari" />
+    <NavigationProperty Name="Admin" Relationship="ptsModel.FK_Admin_YetkiTur" FromRole="YetkiTur" ToRole="Admin" />
+  </EntityType>
+  <Association Name="FK_Ogrenciler_YetkiTur">
+    <End Type="ptsModel.YetkiTur" Role="YetkiTur" Multiplicity="0..1" />
+    <End Type="ptsModel.Ogrenciler" Role="Ogrenciler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YetkiTur">
+        <PropertyRef Name="yetkiTurID" />
+      </Principal>
+      <Dependent Role="Ogrenciler">
+        <PropertyRef Name="yetkiTuru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgretimElemanlari_YetkiTur1">
+    <End Type="ptsModel.YetkiTur" Role="YetkiTur" Multiplicity="0..1" />
+    <End Type="ptsModel.OgretimElemanlari" Role="OgretimElemanlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YetkiTur">
+        <PropertyRef Name="yetkiTurID" />
+      </Principal>
+      <Dependent Role="OgretimElemanlari">
+        <PropertyRef Name="yetkiTuru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="ProjeIslem">
+    <Key>
+      <PropertyRef Name="işlemID" />
+    </Key>
+    <Property Name="işlemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="alinanProjeID" Type="Int32" />
+    <Property Name="verilenTarih" Type="DateTime" Precision="3" />
+    <Property Name="gorulenTarih" Type="DateTime" Precision="3" />
+    <Property Name="durumID" Type="Int32" />
+    <Property Name="ogrID" Type="Int32" />
+    <Property Name="aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="projeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonemlikAlinanProje" Relationship="ptsModel.FK_ProjeIslem_DonemlikAlinanProje" FromRole="ProjeIslem" ToRole="DonemlikAlinanProje" />
+    <NavigationProperty Name="Durum" Relationship="ptsModel.FK_ProjeIslem_Durum" FromRole="ProjeIslem" ToRole="Durum" />
+    <Property Name="projeYorum" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="projeOkuma" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_ProjeIslem_DonemlikAlinanProje">
+    <End Type="ptsModel.DonemlikAlinanProje" Role="DonemlikAlinanProje" Multiplicity="0..1" />
+    <End Type="ptsModel.ProjeIslem" Role="ProjeIslem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonemlikAlinanProje">
+        <PropertyRef Name="AlinanProjeID" />
+      </Principal>
+      <Dependent Role="ProjeIslem">
+        <PropertyRef Name="alinanProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjeIslem_Durum">
+    <End Type="ptsModel.Durum" Role="Durum" Multiplicity="0..1" />
+    <End Type="ptsModel.ProjeIslem" Role="ProjeIslem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Durum">
+        <PropertyRef Name="durumID" />
+      </Principal>
+      <Dependent Role="ProjeIslem">
+        <PropertyRef Name="durumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OgrenciRaporlari">
+    <Key>
+      <PropertyRef Name="RaporID" />
+    </Key>
+    <Property Name="RaporID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OgrID" Type="Int32" />
+    <Property Name="ProjeID" Type="Int32" />
+    <Property Name="DosyaAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DosyaYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="YuklenmeTarihi" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Ogrenciler" Relationship="ptsModel.FK_OgrenciRaporlari_Ogrenciler" FromRole="OgrenciRaporlari" ToRole="Ogrenciler" />
+    <NavigationProperty Name="Projeler" Relationship="ptsModel.FK_OgrenciRaporlari_Projeler" FromRole="OgrenciRaporlari" ToRole="Projeler" />
+    <Property Name="ogrElmID" Type="Int32" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="ptsModel.FK_OgrenciRaporlari_OgretimElemanlari" FromRole="OgrenciRaporlari" ToRole="OgretimElemanlari" />
+  </EntityType>
+  <Association Name="FK_OgrenciRaporlari_Ogrenciler">
+    <End Type="ptsModel.Ogrenciler" Role="Ogrenciler" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciRaporlari" Role="OgrenciRaporlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="ogrID" />
+      </Principal>
+      <Dependent Role="OgrenciRaporlari">
+        <PropertyRef Name="OgrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciRaporlari_Projeler">
+    <End Type="ptsModel.Projeler" Role="Projeler" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciRaporlari" Role="OgrenciRaporlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="OgrenciRaporlari">
+        <PropertyRef Name="ProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciRaporlari_OgretimElemanlari">
+    <End Type="ptsModel.OgretimElemanlari" Role="OgretimElemanlari" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciRaporlari" Role="OgrenciRaporlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OgretimElemanlari">
+        <PropertyRef Name="SicilNo" />
+      </Principal>
+      <Dependent Role="OgrenciRaporlari">
+        <PropertyRef Name="ogrElmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Admin_YetkiTur">
+    <End Type="ptsModel.YetkiTur" Role="YetkiTur" Multiplicity="0..1" />
+    <End Type="ptsModel.Admin" Role="Admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YetkiTur">
+        <PropertyRef Name="yetkiTurID" />
+      </Principal>
+      <Dependent Role="Admin">
+        <PropertyRef Name="adminYetki" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Toplanti">
+    <Key>
+      <PropertyRef Name="ToplantiID" />
+    </Key>
+    <Property Name="ToplantiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrElmID" Type="Int32" />
+    <Property Name="toplantiTarihi" Type="DateTime" Precision="3" />
+    <Property Name="toplantiAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="toplantiLinki" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="ptsModel.FK_Toplanti_OgretimElemanlari" FromRole="Toplanti" ToRole="OgretimElemanlari" />
+    <Property Name="ogrID" Type="Int32" />
+    <Property Name="tümOgrenciler" Type="Boolean" />
+    <NavigationProperty Name="Ogrenciler" Relationship="ptsModel.FK_Toplanti_Ogrenciler" FromRole="Toplanti" ToRole="Ogrenciler" />
+  </EntityType>
+  <Association Name="FK_Toplanti_OgretimElemanlari">
+    <End Type="ptsModel.OgretimElemanlari" Role="OgretimElemanlari" Multiplicity="0..1" />
+    <End Type="ptsModel.Toplanti" Role="Toplanti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OgretimElemanlari">
+        <PropertyRef Name="SicilNo" />
+      </Principal>
+      <Dependent Role="Toplanti">
+        <PropertyRef Name="ogrElmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Toplanti_Ogrenciler">
+    <End Type="ptsModel.Ogrenciler" Role="Ogrenciler" Multiplicity="0..1" />
+    <End Type="ptsModel.Toplanti" Role="Toplanti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="ogrID" />
+      </Principal>
+      <Dependent Role="Toplanti">
+        <PropertyRef Name="ogrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Fakulteler">
+    <Key>
+      <PropertyRef Name="fakulteId" />
+    </Key>
+    <Property Name="fakulteId" Type="Int32" Nullable="false" />
+    <Property Name="fakulteAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bolumler" Relationship="ptsModel.FK_Bolumler_Fakulteler" FromRole="Fakulteler" ToRole="Bolumler" />
+  </EntityType>
+  <EntityType Name="OgrenciProjeGonderim">
+    <Key>
+      <PropertyRef Name="gonderilenProjeId" />
+    </Key>
+    <Property Name="gonderilenProjeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="projeID" Type="Int32" />
+    <Property Name="ogrID" Type="Int32" />
+    <Property Name="ogrElmID" Type="Int32" />
+    <NavigationProperty Name="Ogrenciler" Relationship="ptsModel.FK_OgrenciProjeGonderim_Ogrenciler" FromRole="OgrenciProjeGonderim" ToRole="Ogrenciler" />
+    <NavigationProperty Name="OgretimElemanlari" Relationship="ptsModel.FK_OgrenciProjeGonderim_OgretimElemanlari" FromRole="OgrenciProjeGonderim" ToRole="OgretimElemanlari" />
+    <NavigationProperty Name="Projeler" Relationship="ptsModel.FK_OgrenciProjeGonderim_Projeler" FromRole="OgrenciProjeGonderim" ToRole="Projeler" />
+    <Property Name="projeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DosyaYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DosyaAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="yuklenmeTarihi" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_Bolumler_Fakulteler">
+    <End Type="ptsModel.Fakulteler" Role="Fakulteler" Multiplicity="0..1" />
+    <End Type="ptsModel.Bolumler" Role="Bolumler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fakulteler">
+        <PropertyRef Name="fakulteId" />
+      </Principal>
+      <Dependent Role="Bolumler">
+        <PropertyRef Name="fakulteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciProjeGonderim_Ogrenciler">
+    <End Type="ptsModel.Ogrenciler" Role="Ogrenciler" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciProjeGonderim" Role="OgrenciProjeGonderim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="ogrID" />
+      </Principal>
+      <Dependent Role="OgrenciProjeGonderim">
+        <PropertyRef Name="ogrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciProjeGonderim_OgretimElemanlari">
+    <End Type="ptsModel.OgretimElemanlari" Role="OgretimElemanlari" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciProjeGonderim" Role="OgrenciProjeGonderim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OgretimElemanlari">
+        <PropertyRef Name="SicilNo" />
+      </Principal>
+      <Dependent Role="OgrenciProjeGonderim">
+        <PropertyRef Name="ogrElmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciProjeGonderim_Projeler">
+    <End Type="ptsModel.Projeler" Role="Projeler" Multiplicity="0..1" />
+    <End Type="ptsModel.OgrenciProjeGonderim" Role="OgrenciProjeGonderim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="OgrenciProjeGonderim">
+        <PropertyRef Name="projeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

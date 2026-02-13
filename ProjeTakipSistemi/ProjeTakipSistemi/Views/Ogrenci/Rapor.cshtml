@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Rapor";
+    Layout = "~/Views/Shared/_LayoutOgrenci.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card-header">
+        <h3 class="text-center">Rapor Gönder</h3>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm("Rapor", "Ogrenci", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <label for="projeAdi" class="form-label">Proje Seçiniz</label>
+            <select class="form-select" name="proje" id="projeBaslik">
+                <option value="">Proje Seçiniz</option>
+                @foreach (var proje in ViewBag.projeListesi)
+                {
+                    <option value="@proje.ProjeID">@proje.ProjeAd</option>
+                }
+            </select>
+
+            <div class="mb-3">
+                <label class="form-label">Rapor Dosyası</label>
+                <input type="file" class="form-control" name="raporDosyasi" />
+            </div>
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-dark">Gönder</button>
+            </div>
+        }
+
+    </div>
+</div>
+@if (TempData["mesaj"] != null)
+            {
+                <div class="alert alert-warning">@TempData["mesaj"]</div>
+            }
+
